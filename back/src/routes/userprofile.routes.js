@@ -8,7 +8,10 @@ const express = require("express");
 const router = express.Router();
 const userProfileController = require("../controllers/userprofile.controller");
 const { authenticateToken } = require("../middlewares/auth.middleware");
-const { uploadAvatar, handleUploadError } = require("../middlewares/upload.middleware");
+const {
+  uploadAvatar,
+  handleUploadError,
+} = require("../middlewares/upload.middleware");
 
 /**
  * @route   GET /api/profile/me
@@ -35,7 +38,7 @@ router.put(
   authenticateToken,
   uploadAvatar.single("avatar"),
   handleUploadError,
-  userProfileController.uploadAvatar
+  userProfileController.uploadAvatar,
 );
 
 /**

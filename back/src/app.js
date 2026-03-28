@@ -48,6 +48,10 @@ const { logRequest } = require("./middlewares/logger.middleware");
 // Importar middleware de error global
 const { errorHandler } = require("./middlewares/error.middleware");
 
+// Importar Swagger (Documentación OpenAPI)
+const swaggerUi = require("swagger-ui-express");
+const swaggerDocument = require("./swagger.json");
+
 // Importar configuración de base de datos (Módulo 7)
 const { testConnection, syncDatabase } = require("./models");
 
@@ -111,6 +115,9 @@ app.use(express.static(path.join(__dirname, "../../alke-wallet")));
 // ============================================
 // 5. CONFIGURACIÓN DE RUTAS
 // ============================================
+
+// Montar la documentación Swagger (Bonus Módulo 8)
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Montar las rutas principales en la raíz de la aplicación
 app.use("/", mainRoutes);

@@ -31,10 +31,11 @@ Según la consigna oficial, estos son los requisitos a validar:
 
 ### 🎁 Bonus (Opcional)
 
-- [ ] **Documentación Swagger/OpenAPI**
-  - Falta: Crear archivo swagger.json o usar swagger-ui
+- [x] **Documentación Swagger/OpenAPI**
+  - Implementado mediante `swagger-ui-express` y `swagger.json`
+  - Disponible en `/api-docs`
 
-**Status**: ✅ 90% completado (falta Swagger)
+**Status**: ✅ 100% completado
 
 ---
 
@@ -95,11 +96,11 @@ Según la consigna oficial, estos son los requisitos a validar:
 
 ### 🎁 Bonus (Opcional)
 
-- [ ] **Asociar archivos a usuario**
-  - Falta: Guardar avatar en UserProfile model
-  - Falta: Endpoint PUT /api/profile/avatar funcionando
+- [x] **Asociar archivos a usuario**
+  - Implementado guardado de avatar en modelo
+  - Endpoint PUT /api/profile/avatar funcional
 
-**Status**: ⚠️ 60% completado (falta claridad en endpoint)
+**Status**: ✅ 100% completado
 
 ---
 
@@ -165,7 +166,7 @@ Necesita capturas/evidencias de:
   - POST /api/posts con datos
   - Response 201 creado
 
-- [ ] **Subida de archivo** (Postman screenshot) - BONUS
+- [x] **Subida de archivo** (Postman screenshot) - BONUS
   - POST /api/profile/avatar
   - Archivo guardado en uploads/
 

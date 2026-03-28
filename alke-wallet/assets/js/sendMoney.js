@@ -93,15 +93,15 @@ $(document).ready(function () {
     contactosFiltrados.forEach(function (contacto, index) {
       // Encontrar índice original
       const indexOriginal = contactos.findIndex(
-        (c) => c.numeroCuenta === contacto.numeroCuenta
+        (c) => c.numeroCuenta === contacto.numeroCuenta,
       );
 
       $select.append(
         $("<option></option>")
           .val(indexOriginal)
           .text(
-            `${contacto.nombre} ${contacto.apellido} - ${contacto.alias} (${contacto.banco})`
-          )
+            `${contacto.nombre} ${contacto.apellido} - ${contacto.alias} (${contacto.banco})`,
+          ),
       );
     });
 
@@ -110,7 +110,7 @@ $(document).ready(function () {
       $select.append(
         $("<option></option>")
           .attr("disabled", true)
-          .text("❌ No se encontraron contactos")
+          .text("❌ No se encontraron contactos"),
       );
     }
   }
@@ -134,7 +134,7 @@ $(document).ready(function () {
     contactos.forEach(function (contacto, index) {
       const $item = $("<div></div>")
         .addClass(
-          "list-group-item d-flex justify-content-between align-items-center"
+          "list-group-item d-flex justify-content-between align-items-center",
         )
         .html(
           `
@@ -148,7 +148,7 @@ $(document).ready(function () {
           <button class="btn btn-sm btn-danger btn-eliminar" data-index="${index}">
             🗑️ Eliminar
           </button>
-        `
+        `,
         );
 
       $lista.append($item);
@@ -279,7 +279,7 @@ $(document).ready(function () {
 
     // Verificar si ya existe el número de cuenta
     const existe = contactos.some(
-      (c) => c.numeroCuenta === contacto.numeroCuenta
+      (c) => c.numeroCuenta === contacto.numeroCuenta,
     );
 
     if (existe) {
@@ -324,7 +324,7 @@ $(document).ready(function () {
     const contacto = contactos[index];
 
     const confirmar = confirm(
-      `¿Estás seguro de eliminar a ${contacto.nombre} ${contacto.apellido}?`
+      `¿Estás seguro de eliminar a ${contacto.nombre} ${contacto.apellido}?`,
     );
 
     if (confirmar) {
@@ -370,7 +370,7 @@ $(document).ready(function () {
     if (monto < 1000) {
       mostrarAlerta(
         "⚠️ El monto mínimo de transferencia es $1.000 CLP",
-        "warning"
+        "warning",
       );
       $("#montoEnviar").focus();
       return;
@@ -382,9 +382,9 @@ $(document).ready(function () {
     if (monto > saldoActual) {
       mostrarAlerta(
         `⚠️ Saldo insuficiente<br><small>Saldo disponible: $${formatearNumero(
-          saldoActual
+          saldoActual,
         )}</small>`,
-        "danger"
+        "danger",
       );
       return;
     }
@@ -411,7 +411,7 @@ $(document).ready(function () {
       "transferencia",
       monto,
       `Transferencia a ${contacto.nombre} ${contacto.apellido}`,
-      contacto.alias
+      contacto.alias,
     );
 
     // Mostrar mensaje de éxito
@@ -420,18 +420,18 @@ $(document).ready(function () {
       <div class="text-center">
         <h5 class="mb-3">✅ ¡Transferencia exitosa!</h5>
         <p class="mb-2"><strong>Destinatario:</strong> ${contacto.nombre} ${
-        contacto.apellido
-      }</p>
+          contacto.apellido
+        }</p>
         <p class="mb-2"><strong>Banco:</strong> ${contacto.banco}</p>
         <p class="mb-2"><strong>Monto:</strong> $${formatearNumero(
-          monto
+          monto,
         )} CLP</p>
         <p class="mb-0"><strong>Nuevo saldo:</strong> $${formatearNumero(
-          nuevoSaldo
+          nuevoSaldo,
         )} CLP</p>
       </div>
     `,
-      "success"
+      "success",
     );
 
     // Limpiar formulario
@@ -501,7 +501,7 @@ $(document).ready(function () {
         `
         ${mensaje}
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-      `
+      `,
       );
 
     $("#alert-container").append(alerta).hide().fadeIn(400);
@@ -510,7 +510,7 @@ $(document).ready(function () {
       {
         scrollTop: $("#alert-container").offset().top - 100,
       },
-      500
+      500,
     );
   }
 

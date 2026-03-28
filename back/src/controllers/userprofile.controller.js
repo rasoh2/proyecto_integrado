@@ -333,15 +333,6 @@ const deleteUserProfile = async (req, res) => {
   }
 };
 
-module.exports = {
-  getMyProfile,
-  getUserProfile,
-  updateMyProfile,
-  updateUserProfile,
-  deleteUserProfile,
-  uploadAvatar,
-};
-
 /**
  * Subir avatar del usuario autenticado
  * POST/PUT /api/profile/avatar
@@ -353,20 +344,20 @@ const uploadAvatar = async (req, res) => {
 
     if (!req.file) {
       return res.status(400).json({
-        status: 'error',
-        message: 'No se ha subido ningún archivo',
+        status: "error",
+        message: "No se ha subido ningún archivo",
         data: null,
       });
     }
 
-    const avatarUrl = '/uploads/' + req.file.filename;
+    const avatarUrl = "/uploads/" + req.file.filename;
 
     // Actualizar el usuario
     const user = await User.findByPk(userId);
     if (!user) {
       return res.status(404).json({
-        status: 'error',
-        message: 'Usuario no encontrado',
+        status: "error",
+        message: "Usuario no encontrado",
         data: null,
       });
     }
@@ -375,18 +366,27 @@ const uploadAvatar = async (req, res) => {
     await user.save();
 
     return res.status(200).json({
-      status: 'success',
-      message: 'Avatar actualizado correctamente',
+      status: "success",
+      message: "Avatar actualizado correctamente",
       data: {
         avatar: avatarUrl,
       },
     });
   } catch (error) {
-    console.error('Error al subir avatar:', error);
+    console.error("Error al subir avatar:", error);
     return res.status(500).json({
-      status: 'error',
-      message: 'Error interno al procesar el archivo',
+      status: "error",
+      message: "Error interno al procesar el archivo",
       error: error.message,
     });
   }
+};
+
+module.exports = {
+  getMyProfile,
+  getUserProfile,
+  updateMyProfile,
+  updateUserProfile,
+  deleteUserProfile,
+  uploadAvatar,
 };
