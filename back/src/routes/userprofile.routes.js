@@ -8,6 +8,7 @@ const express = require("express");
 const router = express.Router();
 const userProfileController = require("../controllers/userprofile.controller");
 const { authenticateToken } = require("../middlewares/auth.middleware");
+const { uploadAvatar, handleUploadError } = require("../middlewares/upload.middleware");
 
 /**
  * @route   GET /api/profile/me
@@ -23,6 +24,19 @@ router.get("/me", authenticateToken, userProfileController.getMyProfile);
  * @body    { "bio": "string (max 255)", "phone": "string (max 30)" }
  */
 router.put("/me", authenticateToken, userProfileController.updateMyProfile);
+
+/**
+ * @route   PUT /api/profile/avatar
+ * @desc    Subir/Actualizar avatar del usuario
+ * @access  Private
+ */
+router.put(
+  "/avatar",
+  authenticateToken,
+  uploadAvatar.single("avatar"),
+  handleUploadError,
+  userProfileController.uploadAvatar
+);
 
 /**
  * @route   GET /api/profile/:userId
