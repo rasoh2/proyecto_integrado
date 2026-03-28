@@ -99,7 +99,6 @@ app.use(logRequest);
 // Queremos que los usuarios puedan ver las imágenes (como las del carrusel) o leer el archivo CSS.
 // Si no pusiéramos 'express.static', tendríamos que programar una ruta GET por CADA imagen.
 // Con 'express.static' le decimos a Express: "Todo lo que esté en /public o /uploads, muéstralo libremente al navegador".
-app.use(express.static(path.join(__dirname, "../public")));
 app.use("/uploads", express.static(path.join(__dirname, "../uploads")));
 
 // ============================================
