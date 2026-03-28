@@ -117,7 +117,7 @@ app.use(express.static(path.join(__dirname, "../../alke-wallet")));
 // ============================================
 
 // Montar la documentación Swagger (Bonus Módulo 8)
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Montar las rutas principales en la raíz de la aplicación
 app.use("/", mainRoutes);

@@ -110,14 +110,17 @@
                 "type": "object",
                 "properties": {
                   "title": { "type": "string", "example": "Mi primer post" },
-                  "content": { "type": "string", "example": "Contenido del post" }
+                  "content": {
+                    "type": "string",
+                    "example": "Contenido del post"
+                  }
                 }
               }
             }
           }
         },
         "responses": {
-           "201": { "description": "Post creado" }
+          "201": { "description": "Post creado" }
         }
       }
     }
