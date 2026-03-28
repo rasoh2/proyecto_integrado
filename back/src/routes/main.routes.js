@@ -25,12 +25,6 @@ const mainController = require("../controllers/main.controller");
 // ============================================
 
 /**
- * GET /
- * Ruta de inicio - Devuelve una página HTML de bienvenida
- */
-router.get("/", mainController.getHome);
-
-/**
  * GET /status
  * Ruta de estado - Devuelve información del servidor en formato JSON
  * Útil para health checks y monitoreo

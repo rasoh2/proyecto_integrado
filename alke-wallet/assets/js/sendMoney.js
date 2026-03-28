@@ -46,27 +46,14 @@ $(document).ready(function () {
   }
 
   /**
-   * Inicializar contactos predefinidos desde JSON
+   * Inicializar contactos predefinidos (vacio por ahora ya que no hay endpoint de contactos)
    */
   function inicializarContactos() {
     if (!localStorage.getItem("contactos")) {
-      console.log("📥 Cargando contactos iniciales...");
-
-      $.ajax({
-        url: "assets/data/contactos.json",
-        method: "GET",
-        dataType: "json",
-        success: function (data) {
-          localStorage.setItem("contactos", JSON.stringify(data));
-          console.log("✅ Contactos iniciales cargados:", data.length);
-          cargarContactos();
-          mostrarListaContactos();
-        },
-        error: function (xhr, status, error) {
-          console.error("❌ Error al cargar contactos:", error);
-          localStorage.setItem("contactos", JSON.stringify([]));
-        },
-      });
+      console.log("📥 Inicializando contactos vacíos...");
+      localStorage.setItem("contactos", JSON.stringify([]));
+      cargarContactos();
+      mostrarListaContactos();
     }
   }
 
