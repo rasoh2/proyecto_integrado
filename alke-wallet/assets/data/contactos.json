@@ -1,0 +1,212 @@
+[
+  {
+    "nombre": "María",
+    "apellido": "González",
+    "alias": "Mago",
+    "banco": "Banco de Chile",
+    "numeroCuenta": "1234567890"
+  },
+  {
+    "nombre": "María",
+    "apellido": "Rodríguez",
+    "alias": "Mari",
+    "banco": "Banco Estado",
+    "numeroCuenta": "2345678901"
+  },
+  {
+    "nombre": "Carlos",
+    "apellido": "Pérez",
+    "alias": "Carlitos",
+    "banco": "Banco Santander",
+    "numeroCuenta": "3456789012"
+  },
+  {
+    "nombre": "Carlos",
+    "apellido": "Silva",
+    "alias": "Charly",
+    "banco": "Banco BCI",
+    "numeroCuenta": "4567890123"
+  },
+  {
+    "nombre": "Ana",
+    "apellido": "Martínez",
+    "alias": "Anita",
+    "banco": "Banco de Chile",
+    "numeroCuenta": "5678901234"
+  },
+  {
+    "nombre": "Ana",
+    "apellido": "López",
+    "alias": "Ani",
+    "banco": "Banco Estado",
+    "numeroCuenta": "6789012345"
+  },
+  {
+    "nombre": "Juan",
+    "apellido": "Fernández",
+    "alias": "Juancho",
+    "banco": "Banco Santander",
+    "numeroCuenta": "7890123456"
+  },
+  {
+    "nombre": "Juan",
+    "apellido": "Torres",
+    "alias": "Juanito",
+    "banco": "Banco BCI",
+    "numeroCuenta": "8901234567"
+  },
+  {
+    "nombre": "Pedro",
+    "apellido": "Ramírez",
+    "alias": "Pedrito",
+    "banco": "Banco de Chile",
+    "numeroCuenta": "9012345678"
+  },
+  {
+    "nombre": "Pedro",
+    "apellido": "Morales",
+    "alias": "Perico",
+    "banco": "Banco Estado",
+    "numeroCuenta": "0123456789"
+  },
+  {
+    "nombre": "Luis",
+    "apellido": "Sánchez",
+    "alias": "Lucho",
+    "banco": "Banco Santander",
+    "numeroCuenta": "1234509876"
+  },
+  {
+    "nombre": "Luis",
+    "apellido": "Vargas",
+    "alias": "Luisito",
+    "banco": "Banco BCI",
+    "numeroCuenta": "2345609876"
+  },
+  {
+    "nombre": "Carmen",
+    "apellido": "Rojas",
+    "alias": "Carmencha",
+    "banco": "Banco de Chile",
+    "numeroCuenta": "3456709876"
+  },
+  {
+    "nombre": "Carmen",
+    "apellido": "Muñoz",
+    "alias": "Cami",
+    "banco": "Banco Estado",
+    "numeroCuenta": "4567809876"
+  },
+  {
+    "nombre": "Jorge",
+    "apellido": "Castro",
+    "alias": "Coke",
+    "banco": "Banco Santander",
+    "numeroCuenta": "5678909876"
+  },
+  {
+    "nombre": "Jorge",
+    "apellido": "Vega",
+    "alias": "Jorgito",
+    "banco": "Banco BCI",
+    "numeroCuenta": "6789009876"
+  },
+  {
+    "nombre": "Patricia",
+    "apellido": "Herrera",
+    "alias": "Paty",
+    "banco": "Banco de Chile",
+    "numeroCuenta": "7890109876"
+  },
+  {
+    "nombre": "Patricia",
+    "apellido": "Cortés",
+    "alias": "Patri",
+    "banco": "Banco Estado",
+    "numeroCuenta": "8901209876"
+  },
+  {
+    "nombre": "Rodrigo",
+    "apellido": "Núñez",
+    "alias": "Rodri",
+    "banco": "Banco Santander",
+    "numeroCuenta": "9012309876"
+  },
+  {
+    "nombre": "Rodrigo",
+    "apellido": "Mendoza",
+    "alias": "Rodro",
+    "banco": "Banco BCI",
+    "numeroCuenta": "0123409876"
+  },
+  {
+    "nombre": "Andrea",
+    "apellido": "Flores",
+    "alias": "Andy",
+    "banco": "Banco de Chile",
+    "numeroCuenta": "1234560987"
+  },
+  {
+    "nombre": "Andrea",
+    "apellido": "Gutiérrez",
+    "alias": "Andreita",
+    "banco": "Banco Estado",
+    "numeroCuenta": "2345670987"
+  },
+  {
+    "nombre": "Francisco",
+    "apellido": "Reyes",
+    "alias": "Pancho",
+    "banco": "Banco Santander",
+    "numeroCuenta": "3456780987"
+  },
+  {
+    "nombre": "Francisco",
+    "apellido": "Bustos",
+    "alias": "Fran",
+    "banco": "Banco BCI",
+    "numeroCuenta": "4567890987"
+  },
+  {
+    "nombre": "Claudia",
+    "apellido": "Pizarro",
+    "alias": "Clau",
+    "banco": "Banco de Chile",
+    "numeroCuenta": "5678900987"
+  },
+  {
+    "nombre": "Claudia",
+    "apellido": "Campos",
+    "alias": "Claudita",
+    "banco": "Banco Estado",
+    "numeroCuenta": "6789010987"
+  },
+  {
+    "nombre": "Sergio",
+    "apellido": "Bravo",
+    "alias": "Sergiño",
+    "banco": "Banco Santander",
+    "numeroCuenta": "7890120987"
+  },
+  {
+    "nombre": "Sergio",
+    "apellido": "Fuentes",
+    "alias": "Checho",
+    "banco": "Banco BCI",
+    "numeroCuenta": "8901230987"
+  },
+  {
+    "nombre": "Valentina",
+    "apellido": "Espinoza",
+    "alias": "Vale",
+    "banco": "Banco de Chile",
+    "numeroCuenta": "9012340987"
+  },
+  {
+    "nombre": "Valentina",
+    "apellido": "Contreras",
+    "alias": "Valen",
+    "banco": "Banco Estado",
+    "numeroCuenta": "0123450987"
+  }
+]

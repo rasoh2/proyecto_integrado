@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "email": "user@wallet.com",
+    "password": "12345",
+    "nombre": "Juan",
+    "apellido": "Pérez",
+    "saldoInicial": 250000
+  },
+  {
+    "id": 2,
+    "email": "admin@wallet.com",
+    "password": "admin123",
+    "nombre": "María",
+    "apellido": "González",
+    "saldoInicial": 500000
+  },
+  {
+    "id": 3,
+    "email": "maria@wallet.com",
+    "password": "maria456",
+    "nombre": "María",
+    "apellido": "Rodriguez",
+    "saldoInicial": 150000
+  },
+  {
+    "id": 4,
+    "email": "carlos@wallet.com",
+    "password": "carlos789",
+    "nombre": "Carlos",
+    "apellido": "Fernández",
+    "saldoInicial": 300000
+  },
+  {
+    "id": 5,
+    "email": "ana@wallet.com",
+    "password": "ana2024",
+    "nombre": "Ana",
+    "apellido": "Silva",
+    "saldoInicial": 180000
+  }
+]

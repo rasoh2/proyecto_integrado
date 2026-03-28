@@ -1,0 +1,6 @@
+USING localhost|3306|node_express_webapp|root
+PG_FAIL_MESSAGE 
+PG_FAIL_CODE ECONNREFUSED
+PG_FAIL_ADDRESS undefined
+PG_FAIL_PORT undefined
+PG_FAIL_ERRNO undefined
